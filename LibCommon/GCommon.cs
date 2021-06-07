@@ -14,7 +14,8 @@ namespace LibCommon
     {
         private static LiteDBHelper _ldb = new LiteDBHelper();
         private static List<VideoChannelRecordInfo> _videoChannelRecordInfo = new List<VideoChannelRecordInfo>();
-        public static string BaseStartPath = Environment.CurrentDirectory; //程序启动的目录
+        //public static string BaseStartPath = Environment.CurrentDirectory; //程序启动的目录
+        public static string BaseStartPath = AppDomain.CurrentDomain.BaseDirectory; //程序运行的目录
 
         public static string
             BaseStartFullPath = Process.GetCurrentProcess().MainModule.FileName; //程序启动的全路径

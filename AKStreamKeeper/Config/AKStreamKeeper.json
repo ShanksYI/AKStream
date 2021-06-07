@@ -1,21 +1,20 @@
 {
-  "IpV4Address": "192.168.2.94",
-  "IpV6Address": "fe80::8:807:2143:28a1%5",
-  "WebApiPort": 6880,
-  "MediaServerPath": "/Users/chatop/Projects/Clion/ZLMediaKit/release/mac/Debug/MediaServer",
-  "AkStreamWebRegisterUrl": "http://127.0.0.1:5800/MediaServer/WebHook/MediaServerKeepAlive",
-  "CutMergeFilePath": "/User/chatop/Projects/CutMergeFile",
-  "CustomRecordPathList": [
-    "/Users/chatop/Downloads/record1",
-    "/Users/chatop/Downloads/record2"
-  ],
-  "UseSsl": false,
-  "MinRtpPort": 10001,
-  "MaxRtpPort": 20000,
-  "RandomPort": false,
-  "FFmpegPath": "/usr/local/bin/ffmpeg",
-  "AccessKey": "O7O4S089-PGDW6HTM-T4CV6K74-V6RIP1I6-9300G54F-Z03TI40Q",
-  "RtpPortCdTime": 3600,
-  "HttpClientTimeoutSec": 5,
-  "DisableShell": true
+    "IpV4Address": "192.168.20.4",
+    "IpV6Address": "fe80::d82a:637d:65d2:c41d%11",
+    "WebApiPort": 6880,
+    "MediaServerPath": "D:\\StreamService\\ZLMediaKit\\Release\\ZLMediaKit\\MediaServer.exe",
+    "AkStreamWebRegisterUrl": "http://127.0.0.1:5800/MediaServer/WebHook/MediaServerKeepAlive",
+    "CutMergeFilePath": "D:\\StreamService\\ZLMediaKit\\CutMergeFile",
+    "CustomRecordPathList": [
+        "D:\\StreamService\\ZLMediaKit\\Record"
+    ],
+    "UseSsl": false,
+    "MinRtpPort": 10001,
+    "MaxRtpPort": 20000,
+    "RandomPort": false,
+    "FFmpegPath": "D:/ffmpeg-4.4-full_build/bin/ffmpeg.exe",
+    "AccessKey": "047I4WS1-U51UBO6W-1J4BT21P-MF17IT99-92J8WIHU-944Q4KIW",
+    "RtpPortCdTime": 3600,
+    "HttpClientTimeoutSec": 5,
+    "DisableShell": true
 }

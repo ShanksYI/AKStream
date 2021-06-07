@@ -130,7 +130,7 @@ namespace AKStreamWeb
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
             // 启用Swagger中间件
             app.UseSwagger();

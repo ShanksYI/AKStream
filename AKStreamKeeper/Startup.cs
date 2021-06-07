@@ -126,7 +126,7 @@ namespace AKStreamKeeper
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             // 启用Swagger中间件
             app.UseSwagger();
