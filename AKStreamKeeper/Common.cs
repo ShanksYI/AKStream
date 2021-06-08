@@ -548,8 +548,10 @@ namespace AKStreamKeeper
 
                     GetDiskSpaceToRecordMap();
                     // 将配置文件的MediaServerPath、FFmpegPath修改为相对路径
-                    _akStreamKeeperConfig.MediaServerPath = Path.Combine(GCommon.BaseStartPath, _akStreamKeeperConfig.MediaServerPath);
-                    _akStreamKeeperConfig.FFmpegPath = Path.Combine(GCommon.BaseStartPath, _akStreamKeeperConfig.FFmpegPath);
+                    if(!Path.IsPathRooted(_akStreamKeeperConfig.MediaServerPath))
+                        _akStreamKeeperConfig.MediaServerPath = Path.Combine(GCommon.BaseStartPath, _akStreamKeeperConfig.MediaServerPath);
+                    if (!Path.IsPathRooted(_akStreamKeeperConfig.FFmpegPath))
+                        _akStreamKeeperConfig.FFmpegPath = Path.Combine(GCommon.BaseStartPath, _akStreamKeeperConfig.FFmpegPath);
 
                     return CheckConfig(out rs);
                 }
