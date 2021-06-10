@@ -2,7 +2,7 @@
     "IpV4Address": "192.168.20.4",
     "IpV6Address": "fe80::d82a:637d:65d2:c41d%11",
     "WebApiPort": 6880,
-    "MediaServerPath": "D:\\StreamService\\ZLMediaKit\\Release\\ZLMediaKit\\MediaServer.exe",
+    "MediaServerPath": "../ZLMediaKit/MediaServer.exe",
     "AkStreamWebRegisterUrl": "http://127.0.0.1:5800/MediaServer/WebHook/MediaServerKeepAlive",
     "CutMergeFilePath": "D:\\StreamService\\ZLMediaKit\\CutMergeFile",
     "CustomRecordPathList": [
@@ -12,7 +12,7 @@
     "MinRtpPort": 10001,
     "MaxRtpPort": 20000,
     "RandomPort": false,
-    "FFmpegPath": "D:/ffmpeg-4.4-full_build/bin/ffmpeg.exe",
+    "FFmpegPath": "../ffmpeg.exe",
     "AccessKey": "047I4WS1-U51UBO6W-1J4BT21P-MF17IT99-92J8WIHU-944Q4KIW",
     "RtpPortCdTime": 3600,
     "HttpClientTimeoutSec": 5,
