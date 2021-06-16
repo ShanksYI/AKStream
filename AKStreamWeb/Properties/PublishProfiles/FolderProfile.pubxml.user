@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>E:\Project\SeeanNVR\SeeanNVR-Release\SeeanNVR-Win\AKStreamWeb</_PublishTargetUrl>
-    <History>True|2021-06-10T06:20:50.9331478Z;True|2021-06-10T14:00:37.3813984+08:00;True|2021-06-10T13:52:56.3327492+08:00;False|2021-06-10T13:52:16.7897505+08:00;False|2021-06-10T13:52:02.9902286+08:00;True|2021-06-10T13:47:12.4338971+08:00;</History>
+    <History>True|2021-06-16T08:32:38.5127605Z;True|2021-06-10T14:20:50.9331478+08:00;True|2021-06-10T14:00:37.3813984+08:00;True|2021-06-10T13:52:56.3327492+08:00;False|2021-06-10T13:52:16.7897505+08:00;False|2021-06-10T13:52:02.9902286+08:00;True|2021-06-10T13:47:12.4338971+08:00;</History>
   </PropertyGroup>
 </Project>

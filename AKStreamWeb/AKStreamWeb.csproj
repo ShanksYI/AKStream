@@ -46,4 +46,10 @@
       <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Config\logconfig.xml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

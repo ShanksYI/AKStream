@@ -1,5 +1,5 @@
 {
-    "IpV4Address": "192.168.20.4",
+    "IpV4Address": "127.0.0.1",
     "IpV6Address": "fe80::d82a:637d:65d2:c41d%11",
     "WebApiPort": 6880,
     "MediaServerPath": "../ZLMediaKit/MediaServer.exe",
