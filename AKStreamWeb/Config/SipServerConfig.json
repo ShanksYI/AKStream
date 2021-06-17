@@ -1,21 +1,21 @@
 {
-    "SipIpAddress": "192.168.20.4",
-    "SipIpV6Address": "fe80::d82a:637d:65d2:c41d%11",
+    "SipIpAddress": "127.0.0.1",
+    "SipIpV6Address": "",
     "ServerSipDeviceId": "33020000021180000001",
     "SipPort": 5060,
     "Realm": "3302000002",
     "GbVersion": "GB-2016",
     "Authentication": false,
-    "SipUsername": "admin",
-    "SipPassword": "visizen028",
+    "SipUsername": "",
+    "SipPassword": "",
     "MsgProtocol": "TCP",
     "KeepAliveInterval": 30,
     "KeepAliveLostNumber": 3,
     "IpV6Enable": false,
     "NoAuthenticationRequireds": [
         {
-            "IpV4Address": "192.168.20.4",
-            "IpV6Address": "fe80::d82a:637d:65d2:c41d%11",
+            "IpV4Address": "127.0.0.1",
+            "IpV6Address": "",
             "DeviceId": "33020000021180000001"
         }
     ]
