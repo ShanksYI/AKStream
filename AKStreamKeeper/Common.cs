@@ -538,6 +538,10 @@ namespace AKStreamKeeper
 
                     for (int i = 0; i <= _akStreamKeeperConfig.CustomRecordPathList.Count - 1; i++)
                     {
+                        // 将配置文件的CustomRecordPathList修改为相对路径
+                        if (!Path.IsPathRooted(_akStreamKeeperConfig.CustomRecordPathList[i]))
+                            _akStreamKeeperConfig.CustomRecordPathList[i] = Path.Combine(GCommon.BaseStartPath, _akStreamKeeperConfig.CustomRecordPathList[i]);
+
                         while (_akStreamKeeperConfig.CustomRecordPathList[i].Trim().EndsWith('/') &&
                                _akStreamKeeperConfig.CustomRecordPathList[i].Trim().Length > 1)
                         {
@@ -748,6 +752,10 @@ namespace AKStreamKeeper
 
             if (!string.IsNullOrEmpty(AkStreamKeeperConfig.CutMergeFilePath))
             {
+                // 将配置文件的CutMergeFilePath修改为相对路径
+                if (!Path.IsPathRooted(AkStreamKeeperConfig.CutMergeFilePath))
+                    AkStreamKeeperConfig.CutMergeFilePath = Path.Combine(GCommon.BaseStartPath, AkStreamKeeperConfig.CutMergeFilePath);
+
                 if (KeeperPerformanceInfo.SystemType.Trim().ToUpper().Equals("WINDOWS"))
                 {
                     var tmp1 = AkStreamKeeperConfig.CutMergeFilePath.TrimEnd('\\') + '\\';
