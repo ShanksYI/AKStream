@@ -1383,6 +1383,10 @@ namespace AKStreamWeb.Services
                     req.Enable_Mp4 = 0;
                     req.Src_Url = videoChannel.VideoSrcUrl;
                     req.Timeout_Ms = Common.AkStreamWebConfig.WaitEventTimeOutMSec;
+                    if (!string.IsNullOrEmpty(videoChannel.FFmpegTemplate))
+                    {
+                        req.Ffmpeg_Cmd_Key = videoChannel.FFmpegTemplate;
+                    }
                 }
             }
             else
@@ -1392,6 +1396,10 @@ namespace AKStreamWeb.Services
                 req.Enable_Mp4 = 0;
                 req.Src_Url = videoChannel.VideoSrcUrl;
                 req.Timeout_Ms = Common.AkStreamWebConfig.WaitEventTimeOutMSec;
+                if (!string.IsNullOrEmpty(videoChannel.FFmpegTemplate))
+                {
+                    req.Ffmpeg_Cmd_Key = videoChannel.FFmpegTemplate;
+                }
             }
 
             var ret = mediaServer.WebApiHelper.AddFFmpegSource(req, out rs);
@@ -2767,6 +2775,7 @@ namespace AKStreamWeb.Services
                 tmpVideoChannel.VideoDeviceType = req.VideoDeviceType;
                 tmpVideoChannel.VideoSrcUrl = UtilsHelper.StringIsNullEx(req.VideoSrcUrl) ? null : req.VideoSrcUrl;
                 tmpVideoChannel.MethodByGetStream = req.MethodByGetStream;
+                tmpVideoChannel.FFmpegTemplate = req.FFmpegTemplate;
                 result = ORMHelper.Db.Insert(tmpVideoChannel).ExecuteAffrows();
             }
             catch (Exception ex)
@@ -3572,6 +3581,8 @@ namespace AKStreamWeb.Services
                         x => x.App, req.App)
                     .SetIf(!UtilsHelper.StringIsNullEx(req.Vhost),
                         x => x.Vhost, req.Vhost)
+                    .SetIf(!UtilsHelper.StringIsNullEx(req.FFmpegTemplate),
+                        x => x.FFmpegTemplate, req.FFmpegTemplate)
                     .SetIf(req.AutoVideo != null, x => x.AutoVideo, req.AutoVideo)
                     .SetIf(req.HasPtz != null, x => x.HasPtz, req.HasPtz)
                     .SetIf(req.DefaultRtpPort != null, x => x.DefaultRtpPort, req.DefaultRtpPort)
@@ -3760,6 +3771,7 @@ namespace AKStreamWeb.Services
                         x => x.IpV4Address, req.IpV4Address)
                     .SetIf(!UtilsHelper.StringIsNullEx(req.IpV6Address),
                         x => x.IpV6Address, req.IpV6Address)
+                    .SetIf(!UtilsHelper.StringIsNullEx(req.FFmpegTemplate),x=>x.FFmpegTemplate,req.FFmpegTemplate)
                     .SetIf(!UtilsHelper.StringIsNullEx(req.App), x => x.App, req.App)
                     .SetIf(!UtilsHelper.StringIsNullEx(req.Vhost), x => x.Vhost, req.Vhost)
                     .SetIf(req.AutoVideo != null, x => x.AutoVideo, req.AutoVideo)

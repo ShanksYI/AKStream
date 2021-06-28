@@ -1,12 +1,12 @@
 {
     "IpV4Address": "127.0.0.1",
-    "IpV6Address": "fe80::d82a:637d:65d2:c41d%11",
+    "IpV6Address": "",
     "WebApiPort": 6880,
     "MediaServerPath": "../ZLMediaKit/MediaServer.exe",
     "AkStreamWebRegisterUrl": "http://127.0.0.1:5800/MediaServer/WebHook/MediaServerKeepAlive",
-    "CutMergeFilePath": "D:\\StreamService\\ZLMediaKit\\CutMergeFile",
+    "CutMergeFilePath": "./CutMergeFile",
     "CustomRecordPathList": [
-        "D:\\StreamService\\ZLMediaKit\\Record"
+        "./Record"
     ],
     "UseSsl": false,
     "MinRtpPort": 10001,
